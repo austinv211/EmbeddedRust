@@ -5,3 +5,4 @@ edition = "2021"
 
 [dependencies]
 aux5 = { path = "auxiliary" }
+volatile = "0.4.3"
