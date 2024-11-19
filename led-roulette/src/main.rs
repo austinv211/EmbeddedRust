@@ -2,8 +2,8 @@
 #![no_std]
 #![no_main]
 
-use volatile::Volatile;
 use aux5::{entry, Delay, DelayMs, LedArray, OutputSwitch};
+use volatile::Volatile;
 
 #[entry]
 fn main() -> ! {
@@ -15,10 +15,10 @@ fn main() -> ! {
 
     loop {
         for i in 0..8 {
-            for next_add in 1..(NUM_AHEAD+ 1) {
-               let next = (i + next_add) % 8;
+            for next_add in 1..(NUM_AHEAD + 1) {
+                let next = (i + next_add) % 8;
 
-               leds[next].on().ok();
+                leds[next].on().ok();
             }
             delay.delay_ms(v_half_period.read());
             leds[i].off().ok();
