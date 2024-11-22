@@ -1,7 +1,7 @@
 # Hello ITM
 The solder bridge SB10 is unconnected by default and needs to be soldered to use ITM and the iprintln macros.
 
-in main we are simply calling the iprinln! macro from [auxiliary/src/libr.rs](../hello_world/auxiliary/src/libr.rs)
+in main we are simply calling the iprinln! macro from [auxiliary/src/lib.rs](../hello-world/auxiliary/src/lib.rs)
 
 1. solder the SB10 solder bridge
 2. run openocd as specified in the previous section
