@@ -40,3 +40,4 @@ Our MCU's part number is STM32F303VCT6
 ## Chapter Documentation
 * [LED roulette - turning on LEDS with delay](documentation/led_roulette.md)
 * [Hello ITM - communication using ITM](documentation/hello_itm.md)
+* [Registers](documentation/registers.md)
